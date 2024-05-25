@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adquiere tus videojuegos ya de ya</title>
+    <link rel="stylesheet" href="estilos.css">
+    <!-- Incluye la biblioteca CreateJS -->
+    <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+    <!-- Incluye el archivo JavaScript generado por Adobe Animate -->
+    <script src="banner intento_HTML5 Canvas.js"></script>
+    <style>
+        /* Estilo para el canvas */
+        #animation_container {
+            position: relative;
+            width: 100%;
+            height: auto;
+            background-color:lightseagreen;
+        }
+        canvas {
+            display: block;
+            margin: 0 auto;
+            background-color: #FFFFFF;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 20px;
+            background-color: #333;
+            color: white;
+        }
+        .logo img {
+            height: 50px;
+        }
+        .nav-lin {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .nav-lin:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 20px;
+        }
+        .card {
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        td {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body onload="init();" style="margin:0px;">
+    <header>
+        <div class="logo">
+            <img src="images/logo.jpg" alt="logo de la pagina">
+            <h2 class="nom-empresa">Videojuegos variados</h2>
+        </div>
+        <nav>
+            <a href="" class="nav-lin"><img src="images/facebook.jpg" height="25" width="35"></a>
+            <a href="#" class="nav-lin"><img src="images/whatasa.jpg" height="25" width="35"></a>
+            <a href="#" class="nav-lin"><img src="images/instagram.jpg" height="25" width="35"></a>
+        </nav>
+    </header>
+    <div id="animation_container">
+        <canvas id="canvas" width="1280" height="720"></canvas>
+        <div id="dom_overlay_container"></div>
+    </div>
+    <div class="container mt-5">
+        <table>
+            <tr>
+                <td>
+                    <div class="card" style="width: 18rem;">
+                        <img src="images/fifa24.jpg" class="card-img-top" height="200" width="200">
+                        <div class="card-body">
+                            <h5 class="card-title">EA FIFA24</h5>
+                            <p class="card-text">Compra Ahora y empieza a tocar pelota ya entre los mejores jugadores del mundo, menos los de la liga1.</p>
+                            <a href="https://www.ea.com/es-es/games/ea-sports-fc/fc-24" class="btn btn-primary">Vamos a comprar</a>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="card" style="width: 18rem;">
+                        <img src="images/tekke8.jpg" class="card-img-top" height="200" width="200">
+                        <div class="card-body">
+                            <h5 class="card-title">TEKKEN 8</h5>
+                            <p class="card-text">El mejor juego de peleas que vas a encontrar con interesantes y fabulosos gráficos 4k.</p>
+                            <a href="https://store.steampowered.com/app/1778820/TEKKEN_8/?l=spanish" class="btn btn-primary">Ir a comprar</a>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="card" style="width: 18rem;">
+                        <img src="images/cuphead.jpg" class="card-img-top" height="200" width="200">
+                        <div class="card-body">
+                            <h5 class="card-title">CUPHEAD</h5>
+                            <p class="card-text">Compra y disfruta de una aventura en términos ochenteros, no con los gráficos de último año pero un juego añorable.</p>
+                            <a href="https://store.steampowered.com/app/268910/Cuphead/?l=spanish" class="btn btn-primary">Ir a comprar</a>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="card" style="width: 18rem;">
+                        <img src="images/dbzfigtherz.jpg" class="card-img-top" height="200" width="200">
+                        <div class="card-body">
+                            <h5 class="card-title">DRAGON BALL FIGTHERZ</h5>
+                            <p class="card-text">Con una puntuación de 9 de 10 estrellas a nivel mundial, ven y adquiere uno de los juegos que sigue teniendo actualizaciones seguidas añadiendo más personajes y que contiene los trazos más parecidos al anime.</p>
+                            <a href="https://store.playstation.com/es-es/product/EP0700-CUSA08992_00-DBPROJECTZGOKU18" class="btn btn-primary">Ir a pagar</a>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td>
+                    <div class="card" style="width: 18rem;">
+                        <img src="images/STREET.jpg" class="card-img-top" height="150" width="150">
+                        <div class="card-body">
+                            <h5 class="card-title">STREET FIGTHER</h5>
+                            <p class="card-text">Con una puntuación de 9 de 10 estrellas a nivel mundial, ven y adquiere uno de los mejores juegos en la categoria de lucha.</p>
+                            <a href="https://store.sony.com.pe/ps4-street-fighter-6/p" class="btn btn-primary">Ir a pagar</a>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="card" style="width: 18rem;">
+                        <img src="images/HADES.jpg" class="card-img-top" height="150" width="150">
+                        <div class="card-body">
+                            <h5 class="card-title">HADES</h5>
+                            <p class="card-text">Convierte en el hijo de Hades y pelea hasta derrotar a cronos</p>
+                            <a href="https://store.steampowered.com/app/1145360/Hades/?l=spanish" class="btn btn-primary">Ir a pagar</a>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="card" style="width: 18rem;">
+                        <img src="images/god3.jpg" class="card-img-top" height="150" width="150">
+                        <div class="card-body">
+                            <h5 class="card-title">GOD OF WAR 3</h5>
+                            <p class="card-text">Con una puntuación de 9 de 10 estrellas a nivel mundial, ven y adquiere uno de los mejores juegos en la categoria de lucha.</p>
+                            <a href="https://store.sony.com.pe/god-of-war-iii-remasterizado/p" class="btn btn-primary">Ir a pagar</a>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="card" style="width: 18rem;">
+                        <img src="images/god of war4.jpg" class="card-img-top" height="150" width="150">
+                        <div class="card-body">
+                            <h5 class="card-title">GOD OF WAR ()</h5>
+                            <p class="card-text">Ahora con la cuarta entrega despues de años regresa nuestro espartano mata dioses favorito, juega y continua su historia de como a llegar a amatar dioses olimpicos a matar dioses nordicos como THOR</p>
+                            <a href="https://store.playstation.com/es-pe/product/UP9000-CUSA07408_00-00000000GODOFWAR" class="btn btn-primary">Ir a pagar</a>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+
+
+        </table>
+    </div>
+    <table>
+        <tr>
+<td><center><a href="Pagina2.html"><button style="background-color: white;font-size: 15px;color: black;">1</button></a></center></td>
+<td><center><a href="Pagina2.html"><button style="background-color: white;font-size: 15px;color: black;">2</button></a></center></td>
+</tr>
+    </table>
+    <script>
+        function init() {
+            var canvas = document.getElementById("canvas");
+            var comp = AdobeAn.getComposition("2483AFA515045744A22A1A54FF8D85D5");
+            var lib = comp.getLibrary();
+            var loader = new createjs.LoadQueue(false);
+            loader.addEventListener("fileload", function(evt) { handleFileLoad(evt, comp) });
+            loader.addEventListener("complete", function(evt) { handleComplete(evt, comp) });
+            var lib = comp.getLibrary();
+            loader.loadManifest(lib.properties.manifest);
+        }
+
+        function handleFileLoad(evt, comp) {
+            var images = comp.getImages();
+            if (evt && (evt.item.type == "image")) { images[evt.item.id] = evt.result; }
+        }
+
+        function handleComplete(evt, comp) {
+            var lib = comp.getLibrary();
+            var ss = comp.getSpriteSheet();
+            var queue = evt.target;
+            var ssMetadata = lib.ssMetadata;
+            for (i = 0; i < ssMetadata.length; i++) {
+                ss[ssMetadata[i].name] = new createjs.SpriteSheet({ "images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames })
+            }
+            var exportRoot = new lib.bannerintento_HTML5Canvas();
+            var stage = new lib.Stage(canvas);
+            stage.addChild(exportRoot);
+            createjs.Ticker.framerate = lib.properties.fps;
+            createjs.Ticker.addEventListener("tick", stage);
+        }
+    </script>
+
+</body>
+</html>
